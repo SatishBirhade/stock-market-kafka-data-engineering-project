@@ -32,7 +32,7 @@ This contains the information about the stockmarket dataset used in this project
 ### Project Execution Flow
 Loaded the indexProcessed.csv into python dataframe --> Kafka Producer keeps on generating the sample rows from this dataframe with the latency of 2s through topic : sreetopic1  --> Kafka Consumer consumes these messages using the same topic : sreetopic1 --> Kafka consumer also writes the data into s3 in json format with increasing count --> Glue crawler creates the data catalogs on s3 data --> Query this stock market data using Athena
 
-#### Steps Executed
+### Steps Executed
 
 1. Downloaded some sample stock market data in the csv format.
 2. Used python to simulate this data as simple dataframes and put into the kafka clusters. 
