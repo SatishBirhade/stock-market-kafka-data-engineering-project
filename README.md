@@ -27,7 +27,7 @@ In this project, I have executed an End-To-End Data Engineering Project on Real-
 
 ### Dataset Used
 This contains the information about the stockmarket dataset used in this project.
-# Here is the dataset that i used : https://github.com/SatishBirhade/stock-market-kafka-data-engineering-project/tree/68e8d6817e5c212a768ea82ad5445339011cd1b7/Raw_Data
+## Here is the dataset that i used : https://github.com/SatishBirhade/stock-market-kafka-data-engineering-project/tree/68e8d6817e5c212a768ea82ad5445339011cd1b7/Raw_Data
 
 ### Project Execution Flow
 Loaded the indexProcessed.csv into python dataframe --> Kafka Producer keeps on generating the sample rows from this dataframe with the latency of 2s through topic : sreetopic1  --> Kafka Consumer consumes these messages using the same topic : sreetopic1 --> Kafka consumer also writes the data into s3 in json format with increasing count --> Glue crawler creates the data catalogs on s3 data --> Query this stock market data using Athena
